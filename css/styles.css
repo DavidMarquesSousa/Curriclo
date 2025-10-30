@@ -5,8 +5,8 @@ body {
 
 .navbar {
     transition: all 0.4s;
-    position: relative;
-    background-color: #c0cfde !important;
+    position: sticky;
+    background-color: #e5eaf1 !important;
 }
 
 .navbar-scrolled {
@@ -56,6 +56,8 @@ section {
     gap: 24px;
     align-items: flex-start;
     padding-right: 16px;
+    position: sticky !important;
+    height: 100% !important;
 }
 
 /* sidebar */
@@ -63,10 +65,10 @@ section {
     width: 290px;
     background: #f8f9fa;
     border-radius: 6px;
-    padding: 20px;
+    padding: 6% 1% 1% 1%;
     box-shadow: 0 0 6px rgba(0,0,0,0.04);   
-    position: sticky;
-    height: calc(100vh - 96px);
+    position: fixed;
+    height: 100%;
     overflow-y: auto;
 }
 
@@ -74,15 +76,19 @@ section {
 .MainDiv {
     flex: 1 1 auto;
     min-width: 0; /* prevent overflow in flex layouts */
+    position: static;
+    margin-left: 22vh !important;
 }
 
 /* make profile image responsive inside sidebar */
 .LeftMenu img {
-    max-width: 100%;
-    height: auto;
+    margin-top: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 160px;
+    height: 250px;
+    border-radius: 20%;
 }
 
 /* responsive behavior: on small screens stack vertically */
@@ -92,10 +98,47 @@ section {
         padding-top: 0px;
     }
     .LeftMenu {
-        position: relative;
         top: 0;
         width: 100%;
         height: auto;
     }
 }
 
+.ConteudoCentrado{
+    text-align: center;
+}
+
+.ButtonColor{
+    background-color: #25344b;
+    border-color: #000000;
+    color: white;
+}
+
+.ButtonColor:hover{
+    background-color: #6397cb;
+    border-color: #25344b;
+    color: white;
+}
+
+.link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #007bff;
+}
+
+.link2{
+    --bs-text-opacity: 1;
+    color: var(--bs-secondary-color) !important;
+    text-decoration: none;
+}
+
+.link2:hover {
+    color: #007bff;
+}
+
+.DataBasesIconColor{
+    color: #9b3235;
+}

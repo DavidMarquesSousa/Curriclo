@@ -1,9 +1,0 @@
-.LeftMenu{
-    position: absolute;
-    float: left;
-}
-
-.MainDiv{
-    position: fixed;
-    float: right;
-}
