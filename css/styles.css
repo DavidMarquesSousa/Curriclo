@@ -6,7 +6,7 @@ body {
 .navbar {
     transition: all 0.4s;
     position: sticky;
-    background-color: #33507c18 !important;
+    background-color: #e5eaf1 !important;
 }
 
 .navbar-scrolled {
